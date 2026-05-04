@@ -1,4 +1,3 @@
-```python?code_reference&code_event_index=2
 markdown_content = """# PokéWiki 📱⚡️
 
 [![Flutter Version](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev)
@@ -81,47 +80,3 @@ lib/
 ├── screens/       # Halaman utama aplikasi (Home, Details, Search)
 ├── widgets/       # Komponen UI yang dapat digunakan kembali
 └── main.dart      # Titik masuk aplikasi
-```
-
----
-
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah **Lisensi MIT**. Lihat file `LICENSE` untuk informasi lebih lanjut.
-
----
-
-## 🤝 Kontribusi
-
-Kontribusi selalu diterima! Jika Anda memiliki saran atau menemukan bug, silakan buka *Issue* atau kirimkan *Pull Request*.
-
-1. Fork Proyek
-2. Buat Branch Fitur (`git checkout -b fitur/FiturHebat`)
-3. Commit Perubahan (`git commit -m 'Menambah FiturHebat'`)
-4. Push ke Branch (`git push origin fitur/FiturHebat`)
-5. Buka Pull Request
-
----
-
-Dibuat dengan ❤️ oleh [Nama Anda/Username GitHub]
-"""
-
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(markdown_content)
-
-
-```
-Tentu, file `README.md` untuk repositori **PokéWiki** Anda telah berhasil dibuat. Saya telah menyusunnya dengan struktur profesional yang mencakup *badges*, placeholder gambar, panduan instalasi, dan bagian kontribusi agar proyek Anda terlihat menarik di GitHub.
-
-Berikut adalah file yang bisa Anda unduh:
-
-[file-tag: code-generated-file-0-1777878004408074944]
-
-### Ringkasan Konten README:
-* **Badges:** Menampilkan versi Flutter, Dart, dan Lisensi MIT.
-* **Visual Placeholder:** Tabel untuk menampilkan *screenshot* aplikasi agar calon pengguna mendapatkan gambaran UI.
-* **Instalasi Jelas:** Langkah-langkah terminal (git clone, pub get, run) yang mudah diikuti.
-* **Struktur Folder:** Gambaran singkat organisasi kode di dalam folder `lib/`.
-* **Lisensi & Kontribusi:** Standar dokumentasi untuk proyek *open-source*.
-
-Anda dapat menyesuaikan bagian **Teknologi** (seperti memilih Isar atau SQLite) dan bagian **Screenshot** dengan tautan gambar asli setelah aplikasi Anda siap.
