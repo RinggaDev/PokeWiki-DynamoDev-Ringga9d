@@ -51,12 +51,12 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 1.  **Clone repositori ini:**
     ```bash
-    git clone [https://github.com/username/pokewiki-flutter.git](https://github.com/username/pokewiki-flutter.git)
+    git clone [https://github.com/RinggaDev/PokeWiki-DynamoDev-Ringga9d.git](https://github.com/RinggaDev/PokeWiki-DynamoDev-Ringga9d.git)
     ```
 
 2.  **Masuk ke direktori proyek:**
     ```bash
-    cd pokewiki-flutter
+    cd PokeWiki-DynamoDev-Ringga9d
     ```
 
 3.  **Ambil dependensi:**
