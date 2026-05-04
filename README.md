@@ -22,10 +22,10 @@ Berbeda dengan aplikasi katalog pada umumnya yang bergantung pada API publik sep
 ---
 
 ## 📸 Screenshots
-
+https://github.com/user-attachments/assets/fb4910e7-cb4a-4a6e-81b5-ff62781dcbf8
 | Dashboard | Detail Pokémon |
 | :---: | :---: |
-| ![Dashboard Placeholder](https://via.placeholder.com/200x400?text=Dashboard) | ![Detail Placeholder](https://via.placeholder.com/200x400?text=Detail) |<img width="3676" height="7557" alt="dashboard" src="https://github.com/user-attachments/assets/fb4910e7-cb4a-4a6e-81b5-ff62781dcbf8" />
+| ![Dashboard Placeholder](https://github.com/user-attachments/assets/fb4910e7-cb4a-4a6e-81b5-ff62781dcbf8) | ![Detail Placeholder](https://via.placeholder.com/200x400?text=Detail)|
 
 
 ---
