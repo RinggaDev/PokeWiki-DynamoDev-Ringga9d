@@ -23,9 +23,10 @@ Berbeda dengan aplikasi katalog pada umumnya yang bergantung pada API publik sep
 
 ## 📸 Screenshots
 
-| Dashboard | Detail Pokémon | Search Mode |
-| :---: | :---: | :---: |
-| ![Dashboard Placeholder](https://via.placeholder.com/200x400?text=Dashboard) | ![Detail Placeholder](https://via.placeholder.com/200x400?text=Detail) | ![Search Placeholder](https://via.placeholder.com/200x400?text=Search) |
+| Dashboard | Detail Pokémon |
+| :---: | :---: |
+| ![Dashboard Placeholder](https://via.placeholder.com/200x400?text=Dashboard) | ![Detail Placeholder](https://via.placeholder.com/200x400?text=Detail) |<img width="3676" height="7557" alt="dashboard" src="https://github.com/user-attachments/assets/fb4910e7-cb4a-4a6e-81b5-ff62781dcbf8" />
+
 
 ---
 
@@ -35,8 +36,7 @@ Aplikasi ini dibangun menggunakan tumpukan teknologi modern:
 
 * **Framework:** [Flutter](https://flutter.dev) (UI Toolkit)
 * **Bahasa:** [Dart](https://dart.dev)
-* **Manajemen Data:** Local JSON / SQLite / Isar *(Pilih salah satu sesuai implementasi Anda)*
-* **State Management:** Provider / Riverpod / Bloc *(Opsional: Sesuaikan)*
+* **Manajemen Data:** Local JSON*
 
 ---
 
@@ -75,6 +75,9 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 ## 📂 Struktur Folder (Opsional)
 
 ```text
+assets/
+├── fonts/
+├── images/
 lib/
 ├── data/          # Model data dan penyedia data lokal
 ├── screens/       # Halaman utama aplikasi (Home, Details, Search)
