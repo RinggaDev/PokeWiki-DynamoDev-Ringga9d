@@ -71,7 +71,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 ---
 
-## 📂 Struktur Folder (Opsional)
+## 📂 Struktur Folder
 
 ```text
 assets/
