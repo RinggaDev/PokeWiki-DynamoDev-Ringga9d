@@ -66,7 +66,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 4.  **Jalankan aplikasi:**
     ```bash
-    flutter run
+    flutter run //We recommend using the Google Pixel 6a
     ```
 
 ---
