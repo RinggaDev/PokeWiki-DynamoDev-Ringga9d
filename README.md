@@ -1,4 +1,4 @@
-markdown_content = """# PokéWiki 📱⚡️
+# PokéWiki 📱⚡️
 
 [![Flutter Version](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)](https://flutter.dev)
 [![Dart Version](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
@@ -23,10 +23,9 @@ Berbeda dengan aplikasi katalog pada umumnya yang bergantung pada API publik sep
 
 ## 📸 Screenshots
 
-| Dashboard | Detail Pokémon |
-| :---: | :---: |
-| ![Dashboard Placeholder](https://github.com/user-attachments/assets/fb4910e7-cb4a-4a6e-81b5-ff62781dcbf8) | ![Detail Placeholder](https://via.placeholder.com/200x400?text=Detail)|
-
+| Dashboard |
+| :---: |
+| ![Dashboard Placeholder](https://github.com/user-attachments/assets/fb4910e7-cb4a-4a6e-81b5-ff62781dcbf8) |
 
 ---
 
@@ -52,12 +51,12 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 1.  **Clone repositori ini:**
     ```bash
-    git clone [https://github.com/username/pokewiki-flutter.git](https://github.com/username/pokewiki-flutter.git)
+    git clone [https://github.com/RinggaDev/PokeWiki-DynamoDev-Ringga9d.git](https://github.com/RinggaDev/PokeWiki-DynamoDev-Ringga9d.git)
     ```
 
 2.  **Masuk ke direktori proyek:**
     ```bash
-    cd pokewiki-flutter
+    cd PokeWiki-DynamoDev-Ringga9d
     ```
 
 3.  **Ambil dependensi:**
@@ -67,12 +66,12 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 4.  **Jalankan aplikasi:**
     ```bash
-    flutter run
+    flutter run //We recommend using the Google Pixel 6a
     ```
 
 ---
 
-## 📂 Struktur Folder (Opsional)
+## 📂 Struktur Folder
 
 ```text
 assets/
@@ -83,3 +82,4 @@ lib/
 ├── screens/       # Halaman utama aplikasi (Home, Details, Search)
 ├── widgets/       # Komponen UI yang dapat digunakan kembali
 └── main.dart      # Titik masuk aplikasi
+```
