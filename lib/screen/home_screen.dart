@@ -4,6 +4,8 @@ import 'package:gap/gap.dart';
 import 'package:pokemon_dynamo_dev/models/data/pokemon_data.dart';
 import 'package:pokemon_dynamo_dev/models/widget/card.dart';
 import 'package:pokemon_dynamo_dev/screen/pokemon_detail_screen.dart';
+import 'package:pokemon_dynamo_dev/screen/credit_profile_screen.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 
 class PokemonGoHome extends StatefulWidget {
   const PokemonGoHome({super.key});
@@ -54,16 +56,26 @@ class _PokemonGoHomeState extends State<PokemonGoHome> {
                         fontSize: 42,
                       ),
                     ),
-                    Container(
-                      padding: const EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(12),
-                        border: Border.all(
-                          color: Colors.black.withOpacity(0.05),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const CreditProfileScreen(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: Colors.black.withOpacity(0.05),
+                          ),
                         ),
+                        child: const Icon(LucideIcons.user, color: Colors.black54),
                       ),
-                      child: const Icon(Icons.search, color: Colors.black54),
                     ),
                   ],
                 ),
