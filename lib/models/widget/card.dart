@@ -1,62 +1,3 @@
-// import 'package:flutter/material.dart';
-
-// class CardPokemon extends StatelessWidget {
-//   final String title;
-//   final String type1;
-//   final String type2;
-//   final String image;
-//   // final String description;
-//   // final String stats;
-//   // final String ability;
-//   // final String weakness;
-//   // final String evolution;
-//   // final String role;
-//   // final String partner;
-//   const CardPokemon({
-//     super.key,
-//     required this.title,
-//     required this.type1,
-//     required this.type2,
-//     required this.image,
-//     // required this.description,
-//     // required this.stats,
-//     // required this.ability,
-//     // required this.weakness,
-//     // required this.evolution,
-//     // required this.role,
-//     // required this.partner,
-//   });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       height: 400,
-//       width: 350,
-//       decoration: BoxDecoration(
-//         borderRadius: BorderRadius.circular(18),
-//         color: Colors.white,
-//         border: Border.all(color: Colors.black.withValues(alpha: 0.2)),
-//       ),
-//       child: Column(
-//         children: [
-//           Image.asset(image),
-//           Row(
-//             children: [
-//               Text(title),
-//               Column(
-//                 children: [
-//                   Text(type1),
-//                   Text(type2),
-//                 ],
-//               ),
-//             ],
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -65,6 +6,7 @@ class CardPokemon extends StatelessWidget {
   final String type1;
   final String type2;
   final String image;
+
   const CardPokemon({
     super.key,
     required this.title,
@@ -78,69 +20,75 @@ class CardPokemon extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: Colors.black.withOpacity(0.1)),
-        // boxShadow: [
-        //   BoxShadow(
-        //     color: Colors.black.withOpacity(0.1),
-        //     blurRadius: 25,
-        //     offset: const Offset(0, 2),
-        //   ),
-        // ],
+        borderRadius: BorderRadius.circular(24),
+        border: Border.all(color: const Color(0xFFF3F4F6)),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.04),
+            blurRadius: 20,
+            offset: const Offset(0, 10),
+          ),
+        ],
       ),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(12.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              width: double.infinity, // optional
-              height: 200,
+              width: double.infinity,
+              height: 180,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(11.0),
-                image: DecorationImage(
-                  image: AssetImage(image),
-                  fit: BoxFit.cover, // optional
+                color: const Color(0xFFF9FAFB),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Center(
+                child: Hero(
+                  tag: 'pokemon-$title',
+                  child: Image.asset(
+                    image,
+                    height: 140,
+                    fit: BoxFit.contain,
+                  ),
                 ),
               ),
             ),
-            Gap(10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  title,
-                  style: TextStyle(
-                    fontFamily: 'SatoshiBold',
-                    fontSize: 32,
-                  ),
-                ),
-                Column(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Color(0xff399494).withAlpha(38),
-                        borderRadius: BorderRadius.circular(7.0),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 8.0,
-                          vertical: 3.0,
-                        ),
-                        child: Text(
-                          (type1 + type2),
-                          style: TextStyle(
-                            color: Color(0xff399494),
-                            fontFamily: "SatoshiMedium",
-                            fontSize: 16,
-                          ),
-                        ),
+            const Gap(16),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Text(
+                      title,
+                      style: const TextStyle(
+                        fontFamily: 'SatoshiBold',
+                        fontSize: 28,
+                        letterSpacing: -0.5,
                       ),
                     ),
-                  ],
-                ),
-              ],
+                  ),
+                  Container(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: const Color(0xff399494).withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Text(
+                      type1 + (type2.isNotEmpty ? type2 : ""),
+                      style: const TextStyle(
+                        color: Color(0xff399494),
+                        fontFamily: "SatoshiBold",
+                        fontSize: 13,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
-            Gap(10),
+            const Gap(8),
           ],
         ),
       ),

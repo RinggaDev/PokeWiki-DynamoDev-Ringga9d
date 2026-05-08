@@ -10,7 +10,7 @@ class PokemonDetailScreen extends StatelessWidget {
   Color _getTypeColor(String? type) {
     switch (type?.toLowerCase()) {
       case 'grass':
-        return const Color(0xFF6890F0);
+        return const Color(0xff399494);
       case 'poison':
         return const Color(0xFFA040A0);
       case 'fire':
