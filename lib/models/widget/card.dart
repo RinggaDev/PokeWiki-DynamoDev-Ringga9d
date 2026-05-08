@@ -40,16 +40,13 @@ class CardPokemon extends StatelessWidget {
               height: 180,
               decoration: BoxDecoration(
                 color: const Color(0xFFF9FAFB),
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(22),
               ),
-              child: Center(
-                child: Hero(
-                  tag: 'pokemon-$title',
-                  child: Image.asset(
-                    image,
-                    height: 140,
-                    fit: BoxFit.contain,
-                  ),
+              child: Hero(
+                tag: 'pokemon-$title',
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(14),
+                  child: Image.asset(image, fit: BoxFit.cover),
                 ),
               ),
             ),
@@ -70,8 +67,10 @@ class CardPokemon extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 6,
+                    ),
                     decoration: BoxDecoration(
                       color: const Color(0xff399494).withOpacity(0.1),
                       borderRadius: BorderRadius.circular(12),
