@@ -80,8 +80,8 @@ class CreditProfileScreen extends StatelessWidget {
                 'Pokemon official assets',
               ),
               _buildCreditItem(
-                'Icons',
-                'Lucide Icons',
+                'License',
+                'MIT License',
               ),
               const Gap(30),
               _buildSectionTitle('About'),
