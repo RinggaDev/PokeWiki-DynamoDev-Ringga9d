@@ -74,7 +74,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 
 ## Mission
 
-Implementasi Logika kode dalam bentuk aplikasi terapan dengan referensi Karakter Pokemon
+Implementasi Logika kode dalam bentuk aplikasi terapan dengan referensi Karakter Pokemon.
 
 ## 📂 Struktur Folder
 
