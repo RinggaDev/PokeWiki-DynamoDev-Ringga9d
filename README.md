@@ -88,3 +88,6 @@ lib/
 ├── widgets/       # Komponen UI yang dapat digunakan kembali
 └── main.dart      # Titik masuk aplikasi
 ```
+
+MIT License. Free for Use and Contribute!
+Made with 💖 @Ringga 2026.
